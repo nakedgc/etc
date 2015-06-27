@@ -2,7 +2,8 @@
 
 (locations are approximate)
 
-unused_vars
+unused_vars:
+
 	./src/cmd/compile/internal/gc/y.go:1203:
 		_ = yypt // guard against "declared and not used"
 		(note: does go itself hack around the 'declared and not used' error?)
@@ -11,7 +12,8 @@ unused_vars
 	./src/cmd/compile/internal/gc/walk.go:61:
 		Yyerror("%v declared and not used", l.N.Sym)
 
-unused_packages
+unused_packages:
+
 	./src/cmd/compile/internal/gc/subr.go:346:
 		yyerrorl(int(pack.Lineno), "imported and not used: %q", opkg.Path)
 	./src/cmd/compile/internal/gc/lex.go:2583:

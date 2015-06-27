@@ -24,7 +24,7 @@ unused_packages:
 
 # Other notes
 
-I wrote a `YynonFatalError` function and a `yynonFatalErrorl` function, both in `src/cmd/compile/internal/gc/subr.go`. These should be used to replace the usual `Yyerror` and `yyerror` calls for nonfatal errors.
+I wrote a `YynonFatalError` function and a `yynonFatalErrorl` function, both in `src/cmd/compile/internal/gc/subr.go`. These should be used to replace the usual `Yyerror` and `yyerrorl` calls for nonfatal errors.
 
 The command option for the 'go' executable `-Wno-error` is handled in `src/cmd/go/build.go:224`. It is then passed onto the compiler in `src/cmd/go/build.go:392`.
 
